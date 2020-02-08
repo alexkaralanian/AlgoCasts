@@ -7,6 +7,14 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+function vowels(str) {
+  const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
+  str = str.toLowerCase();
+  let count = 0;
+  str.split('').forEach(char => {
+    if (vowelsArr.includes(char)) count++;
+  });
+  return count;
+}
 
 module.exports = vowels;

@@ -23,7 +23,7 @@ function anagrams(stringA, stringB) {
     anagramMapper(arg, maps[i]);
   });
 
-  const [aMap, bMap] = maps;git remot
+  const [aMap, bMap] = maps;
 
   for (char in aMap) {
     if (aMap[char] !== bMap[char]) isAnagram = false;
